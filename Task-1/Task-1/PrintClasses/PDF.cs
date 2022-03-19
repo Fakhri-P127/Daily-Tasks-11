@@ -4,11 +4,11 @@ using System.Text;
 
 namespace Task_1
 {
-    class PDF : IPrintable
+    class PDF : MainPrintFile
     {
-        public void Print()
+        public override void Print()
         {
             Console.WriteLine("Printed PDF");
-        }
+        }      
     }
 }

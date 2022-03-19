@@ -6,19 +6,17 @@ namespace Task_1
     {
         static void Main(string[] args)
         {
-            int num;
-            do
-            {
-                Console.WriteLine("Enter the Print type you want to see(pdf,excel,word)");
-                MainPrintFile mainPrintFile = new MainPrintFile();
-                Console.WriteLine("If You want to exit the program Press 0. If not then press any other digit");
-                string numStr = Console.ReadLine();
-                num = int.Parse(numStr);
-            } while (num !=0);
-           
-                          
-            
-           
+            Console.WriteLine("First we choose Word:"); 
+            MainPrintFile printFileWord = new Word();
+            printFileWord.Print();
+            Console.WriteLine("------------------------");
+            Console.WriteLine("Then we choose Excel:");
+            MainPrintFile printFileExcel = new Excel();
+            printFileExcel.Print();
+            Console.WriteLine("------------------------");
+            Console.WriteLine("And lastly we choose PDF:");
+            MainPrintFile printFilePdf = new PDF();
+            printFilePdf.Print();          
         }
     }
 }

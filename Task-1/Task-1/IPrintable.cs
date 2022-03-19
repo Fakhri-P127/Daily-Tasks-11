@@ -5,7 +5,7 @@ using System.Text;
 namespace Task_1
 {
     interface IPrintable        
-    {
+    {       
         void Print();
     }
 }

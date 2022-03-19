@@ -4,9 +4,9 @@ using System.Text;
 
 namespace Task_1
 {
-    class Word : IPrintable
+    class Word : MainPrintFile
     {
-        public void Print()
+        public override void Print()
         {
             Console.WriteLine("Printed Word");
         }
